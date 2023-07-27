@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+html {
+    background-color: black;
+    color: #f7e9cd;
+}
+
+body {
+    position: relative;
+}
+
+header {
+    padding: 30px 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header div {
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16.5px;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 35px;
+    text-decoration: underline;
+
+}
+
+td p {
+    margin: 0px;
+    padding: 0px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16.5px;
+}
+
+.logo {
+    width: 80vw;
+    min-width: 500px;
+    max-width: 600px;
+}
+
+.name {
+    margin-top: 5px;
+}
+
+.title_screen {
+    border: solid white;
+    max-width: 60%;
+}
+
+.tree {
+    margin-top: 30px;
+    margin-left:90px;
+}
+
+.gif_anim {
+    max-width: 200px;
+    margin-top: 30px;
+    margin-left: 90px;
+    vertical-align: top;
+}
+
+.caption_gif {
+    vertical-align: top;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.hitbox {
+    border: solid white;
+    max-width: 60%;
+}
+
+.hitboxText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16.5px;
+    vertical-align: top; 
+    margin-left: 970px; 
+    margin-top: 1px;
+}
+
+.background-image {
+    background-image: url(../images/background.jpg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+
+}
+

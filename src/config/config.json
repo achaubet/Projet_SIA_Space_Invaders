@@ -1,0 +1,55 @@
+{
+    "playerModels": {
+        "player0": {
+            "playerName": "Mario",
+            "playerModel": "./src/medias/models/mario/scene.gltf",
+            "centerPosX": 0,
+            "centerPosY": 1,
+            "centerPosZ": 19.5
+        },
+        "player1": {
+            "playerName": "Yoshi",
+            "playerModel": "./src/medias/models/yoshi/scene.gltf",
+            "centerPosX": 0,
+            "centerPosY": 0,
+            "centerPosZ": 19.5
+        }
+    },
+    "enemiesModels": {
+        "enemy1": "./src/medias/models/goomba/goomba.glb",
+        "enemy2": "./src/medias/models/koopa/koopa.glb",
+        "enemy3": "./src/medias/models/blooper/blooper.glb"
+    },
+    "levels": {
+        "1": {
+            "background_type": "texture",
+            "background": "/src/medias/images/clouds.jpg",
+            "block_texture": "./src/medias/textures/overworld_block_1.png",
+            "breakable_block": "./src/medias/textures/breakable_block.png",
+            "ambient_music": "./src/medias/sounds/Level1.mp3",
+            "enemyMaxTime": 1200,
+            "enemyDistance": 3,
+            "enemyShootTime": 3
+        },
+        "2": {
+            "background_type": "color",
+            "background": "0x000000",
+            "block_texture": "./src/medias/textures/underground_block_1.png",
+            "breakable_block": "./src/medias/textures/breakable_block_2.png",
+            "ambient_music": "./src/medias/sounds/Level2.mp3",
+            "enemyMaxTime": 1000,
+            "enemyDistance": 4,
+            "enemyShootTime": 2
+        },
+        "3": {
+            "background_type": "color",
+            "background": "0x000000",
+            "block_texture": "./src/medias/textures/castle_block.png",
+            "breakable_block": "./src/medias/textures/breakable_block.png",
+            "ambient_music": "./src/medias/sounds/Level2.mp3",
+            "enemyMaxTime": 600,
+            "enemyDistance": 5,
+            "enemyShootTime": 1
+        }
+    }
+}

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Yoshi [Yoshi's Island]
+* source:	https://sketchfab.com/3d-models/yoshi-yoshis-island-423e250333a14965be697e33484ec808
+* author:	riikkakilpelainen (https://sketchfab.com/riikkakilpelainen)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Yoshi [Yoshi's Island]" (https://sketchfab.com/3d-models/yoshi-yoshis-island-423e250333a14965be697e33484ec808) by riikkakilpelainen (https://sketchfab.com/riikkakilpelainen) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

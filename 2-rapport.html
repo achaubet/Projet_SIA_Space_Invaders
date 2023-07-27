@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+        <head>
+            <meta charset="utf-8"/>
+            <link rel="stylesheet" type="text/css" href="./rapport/css/style.css">
+            <title>Rapport Projet SIA</title>
+        </head>
+    <body>
+        <header>
+            <img class="logo" src="./rapport/images/logo.png">
+            <div>
+                <p>Rapport Projet SIA - Space Invaders 3D</p>
+                <p class="name">Arnaud Chaubet - M1 TI</p>
+            </div>
+        </header>
+        <div>
+            <h4>Déroulement du jeu</h4>
+            <table>
+                <tr>
+                    <td>
+                        <p>Le jeu consiste à tuer des aliens qui sont représentés par les ennemis du jeu "Super Mario Bros"</p>
+                        <p>Les ennemis se rapprochent horizontalement tout en se rappochant du joueur</p>
+                        <p>Ils peuvent également tirer des missiles qui font perdre des vies au joueur</p>
+                        <p>Pour éviter d'étre tué par les ennemis, le joueur est muni d'un missile permettant de les tuer</p>
+                        <p>Si le joueur touche un ennemi, alors il gagne des points</p>
+                        <p>Le joueur possède 3 vies, si il arrive à 0 alors la partie est terminée et affiche un écran Game Over avec le score</p>
+                        <p>Si le joueur passe les 3 niveaux alors la partie se termine sur un écran félicitant le joueur</p>
+                        <p>Le jeu est composé de 3 niveaux avec une difficulté qui augmente entre chaque niveaux</p>
+                    </td> 
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h4>Technologies logicielles</h4>
+            <table>
+                <tr>
+                    <td style="width: 1000px;">
+                        <p>Le jeu fonctionne grâce à la plateforme Node.js qui permet d'heberger localement une instance du jeu</p>
+                        <p>La bibliothèque Three.js est utilisée pour la construction en 3D du jeu</p>
+                        <p>Les effets post-processing sont gérés avec la bibliothèque three-stdlib (extension pour three.js)</p>
+                        <p>La musique du jeu est gérée à l'aide de la bibliothèque Howler</p>
+                        <p>Pour gérer les évenements liés au clavier, keyboard-ts à été utilisée</p>
+                    </td>
+                    <td>
+                        <img class="title_screen" src="./rapport/images/ecran_titre.png">
+                        <p>Fig.1 - Ecran titre du jeu</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h4>Architecture logicielles</h4>
+            <table>
+                <tr>
+                    <td>
+                        <p>L'architecture logicielle du projet est la suivante: </p>
+                        <img class="tree" src="./rapport/images/tree.png">
+                    </td> 
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h4>Graphisme</h4>
+            <table>
+                <tr>
+                    <td>
+                        <p>Les décors sont repris du jeu "Mario Bros"</p>
+                        <p>Une texture est utilisé pour le sol et pour les abris, chaque niveau possède sa propre texture</p>
+                        <p>Les personnages et les ennemis sont en 3D et ont été trouvés sur le site sketchfab</p>
+                        <p>Un effet post-processing à été ajouté et permet de donner un effet ancienne TV au jeu, cet effet est activable via un appui sur la touche "e"</p>
+                        <p>Concernant l'animation des ennemis, elles ont été retravaillés à l'aide des logiciels MagicaVoxel et 3DS Max<p>
+                    </td> 
+                </tr>
+                <tr>
+                    <td>
+                        <img class="gif_anim" src="./rapport/images/ancienne_anim.gif">
+                        <p class="caption_gif">Fig 2. Ancienne Animation</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="gif_anim" src="./rapport/images/nouvelle_anim.gif">
+                        <p class="caption_gif">Fig 3. Nouvelle Animation</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h4>Dialogues avec l'utilisateur</h4>
+            <table>
+                <tr>
+                    <td style="width: 1000px;">
+                        <p>Lors d'un passage à un niveau supérieur, un message est affiché avec le prochain niveau</p>
+                        <p>La touche "h" permet d'afficher les touches utilisables</p>
+                    </td> 
+                    <td>
+                        <img class="title_screen" src="./rapport/images/interaction_utilisateur.png">
+                        <p>Fig.4 - Ecran affichant le niveau</p>
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+        <div>
+            <h4>Point de vue caméra</h4>
+            <table>
+                <tr>
+                    <td>
+                        <p>Trois points de vue caméra sont disponibles</p>
+                        <p>Le premier (celui par défaut et accessible via la touche '0') montre un point de vue de la scène</p>
+                        <p>Le deuxème, accessible via la touche '1' donne un point de vue mobile qui suit le joueur</p>
+                        <p>Et le troisième, accessible via la touche '2' donne un point de vue latéral de la scène</p>
+                    </td> 
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h4>Gestion des collisions</h4>
+            <table>
+                <tr>
+                    <td style="width: 1000px;">
+                        <p>La collision est assuré par la mise en place d'un raycaster entre le joueur, les missiles, les ennemis et les abris</p>
+                        <p>Lorsqu'un alien est touché, celui-ci disparait de la scène</p>
+                        <p>Les abris (blocs) possèdent 3 vies</p>
+                        <p>Le joueur possède trois vies; lorsqu'il est touché par un missile ennemi, celui-ci perd une vie</p>
+                        <p>Pour améliorer la précision de la collision, le joueur est entouré d'une hitbox permettant de rendre possible l'utilisation de plusieurs personnages</p>
+                    </td> 
+                    <td>
+                        <img class="hitbox" src="./rapport/images/hitbox_joueur.png">
+                        
+                    </td>
+                </tr>
+            </table>
+            <p class="hitboxText">Fig.5 - Hitbox au niveau du joueur</p>
+        </div>
+        <div>
+            <h4>Dynamique</h4>
+            <table>
+                <tr>
+                    <td>
+                        <p>La vitesse de déplacement des ennemis augmente à chaque niveau</p>
+                        <p>La fréquence de tir des missiles ennemis augmente également à chaque niveau</p>
+                    </td> 
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h4>Intelligence artificielle</h4>
+            <table>
+                <tr>
+                    <td>
+                        <p>Une Intelligence artificielle est implémenté permettant de controller les tir des missiles ennemis</p>
+                        <p>Elle genère un nombre aléatoire entre 0 et le nombre maximum d'aliens encore en vie</p>
+                        <p>Cela signifie que plus il y a d'aliens éliminés, plus le nombre maximum diminue pour l'IA </p>
+                    </td> 
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h4>Musique et sons</h4>
+            <table>
+                <tr>
+                    <td>
+                        <p>Les musiques et sons proviennent du jeu "Super Mario Bros" sorti sur NES (à l'exception de la musique du mode invincible)</p>
+                        <p>Chaque niveau possède sa propre musique</p>
+                        <p>Concernant les sons, il y en a un lorsque :</p>
+                        <p>- Le joueur tire </p>
+                        <p>- Le missile joueur touche un ennemi </p>
+                        <p>- Le missile joueur touche un abri </p>
+                        <p>- Le missile ennemi touche le joueur </p>
+                        <p>- Le joueur meurt</p>
+                        <p>- Le joueur gagne la partie</p>
+                    </td> 
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h4>Triche</h4>
+            <table>
+                <tr>
+                    <td>
+                        <p>Plusieurs touches permettent d'activer un mode de triche:</p>
+                        <p>- La touche 'i' permet d'activer le mode invincible, les ennemis ne bougent plus et le joueur ne perds pas de vie</p>
+                        <p>- La touche 'k' permet de tuer instantanément tous les aliens, le joueur ne gagne pas de points</p>
+                    </td> 
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h4>Les petits plus !</h4>
+            <table>
+                <tr>
+                    <td>
+                        <p>Le meilleur score est sauvegardé à l'aide d'un cookie</p>
+                        <p>Le joueur peut changer de personnages à l'aide de la touche 'p'</p>
+                        <p>Le dernier personnage séléctionné est également sauvegardé dans un cookie</p>
+                        <p>Lorsque le joueur appuie sur la touche 'Echap' le jeu se mets en pause</p>
+                        <p>Lorsque le mode invincible est activé, l'effet "Etoile" est appliqué au personnage et la musique "Wing Cap" du jeu "Super Mario 64" est jouée</p>
+                        <p>La configuration des personnages, des ennemis et des niveaux sont enregistrés dans un fichier JSON (fichier config.json), cela permet:</p>
+                        <p>- D'ajouter de nouveaux personnages au jeu</p>
+                        <p>- De rajouter des ennemis</p>
+                        <p>- De rajouter des niveaux avec personnalisation des textures, de la musique et de la difficulté</p> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="gif_anim" src="./rapport/images/mario_starman.gif">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </body>
+    <script>
+        window.addEventListener('scroll', () => {
+            let scrollPosition = window.innerHeight + window.pageYOffset;
+            let pageHeight = document.documentElement.scrollHeight;
+            if(Math.ceil(scrollPosition) >= pageHeight ) {
+                const htmlElement = document.querySelector('html');
+                htmlElement.classList.add('background-image');
+            }
+        });
+    </script>
+</html>

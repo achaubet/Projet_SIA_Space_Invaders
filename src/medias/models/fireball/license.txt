@@ -1,0 +1,11 @@
+Model Information:
+* title:	Fireball from Super Mario Bros
+* source:	https://sketchfab.com/3d-models/fireball-from-super-mario-bros-e670cf19731a4196ad4eb1f788e23efc
+* author:	MagmaMouse (https://sketchfab.com/MagmaMouse)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Fireball from Super Mario Bros" (https://sketchfab.com/3d-models/fireball-from-super-mario-bros-e670cf19731a4196ad4eb1f788e23efc) by MagmaMouse (https://sketchfab.com/MagmaMouse) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
